@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/instagram.css ">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body onload="myFunction()">
+
+        </div>
+
+            <form>
+                <div id="whitebox">
+                    
+                    <div id="formfields">
+                        <div id="image"></div>
+                        <div id="inputbox">
+                        <input type="text" placeholder="Phone umber,username or email ">
+                        <input type="password" placeholder="password"></div>
+                            
+                        <button type="submit"> Log in</button>
+                        
+                        
+                    <div id="anchors">
+                    <p>OR</p>
+                    <a href="#"><i class="fa">&#xf09a;</i> Log in with Facebook</a>
+                    <a href="#" >Forgot password?</a>
+                    </div>
+                    </div>
+                    
+                    
+                </div>
+               
+
+            </form>
+            <div id="dont">Dont have an account?<span>Sign up</span></div>
+            <span id="get">Get the app</span>
+            <div id="socialbuttons">
+            
+                <div id="googleplay"></div>
+                <div id="microsoft"></div>
+            </div>
+            <div id="footer">
+            <ul>
+                <li>Meta</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Jobs</li>
+                <li>Help</li>
+                <li>API</li>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Locations</li>
+                <li>Instagram Lite</li>
+                <li>Threads</li>
+                <li>Contact Uploding & Non-Users</li>
+                <li>Meta Verified</li>
+            </ul>
+            </div>
+            <div id="Phone">
+            <div id="slideshowcontainer">
+                <div class="slideshow"><img src="/photo1.png" style="width: 100%;"></div>
+                <div class="slideshow"><img src="/photo2.png" style="width: 100%;"></div>
+                <div class="slideshow"><img src="/photo3.png" style="width: 100%;"></div>
+                <div class="slideshow"><img src="/photo4.png" style="width: 100%;"></div>
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                </div>
+
+            </div>
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("slideshow");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 2000);
+                    
+                }
+                             </script>
+       
+    </body>
+</html>
